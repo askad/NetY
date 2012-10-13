@@ -1,0 +1,14 @@
+<html>
+<body>
+	Dear {{myWishVo.user_name}}
+	<table border=1>
+		{%for eachWish in wishTableVoList%}
+		<tr>
+			<td>{{eachWish.wish_name}}</td>
+			<td>{{eachWish.wish_link}}</td>
+			<td>{{eachWish.wish_desc}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
